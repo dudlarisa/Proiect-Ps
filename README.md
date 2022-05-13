@@ -17,3 +17,10 @@ In folderul de testare am creat pachetul service care contine cate o clasa cores
 ## Diagrama bazei de date
 ![image](https://user-images.githubusercontent.com/72441193/168190502-3c226d68-7e95-4446-9938-5ef609e5e7af.png)
 
+Baza de date e compusa din 4 tabele.
+Tabelul Administratori e definit de urmatoarele atribute: id, nume, prenume, numar de telefon, email, username, password.
+Tabelul Agenti e definit de urmatoarele atribute:  id, nume, prenume, numar de telefon, email, username, password.
+Tabelul Clienti e definit de urmatoarele atribute:  id, nume, prenume, numar de telefon, email, username, password.
+Tabelul Anunturi e definist de atributele: id, id_agent (agentul care a publicat anuntul), tipul anuntului( inchiriere, vanzare), tipul locuintei(garsoniera, apartament, casa), pret, numar camere.
+Coloana id_agent din tabelul anunturi este Foreign Key cu legatura catre coloana id din tabelul Agenti.
+
