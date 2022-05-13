@@ -9,7 +9,11 @@ Pentru implementarea factory design patter, in pachetul model am adaugat o clasa
 
 ## JUnit Test
 
+In folderul de testare am creat pachetul service care contine cate o clasa corespunzatoare pentru testarea fiecarei metode din clasele de service.
 
+## Diagrama UML
 ![image](https://user-images.githubusercontent.com/72441193/168189850-7e475fa6-5b56-4b9b-8096-25ff315212b9.png)
+
+## Diagrama bazei de date
 ![image](https://user-images.githubusercontent.com/72441193/168190502-3c226d68-7e95-4446-9938-5ef609e5e7af.png)
 
