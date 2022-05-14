@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+/**
+ *
+ */
 @Controller
 public class LogicClient {
     private final ClientService clientService;
@@ -17,15 +20,28 @@ public class LogicClient {
         this.clientService = clientService;
     }
 
+    /**
+     *
+     * @param client
+     * @return
+     */
     public String addClient(@RequestBody Client client){
         clientService.saveClient(client);
         return "New client is added";
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Client> getClienti(){
         return clientService.getClienti();
     }
 
+    /**
+     *
+     * @param idClient
+     */
     public void deleteClient(int idClient){
         clientService.deleteClient(idClient);
     }

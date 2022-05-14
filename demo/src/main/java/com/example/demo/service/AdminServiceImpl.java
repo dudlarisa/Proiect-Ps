@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- *
+ * clasa care implementeaza logica metodelor din interfata administratorului
  */
 @Service
 public class AdminServiceImpl implements AdminService {
@@ -27,7 +27,7 @@ public class AdminServiceImpl implements AdminService {
     }
 
     /**
-     *metoda care insereaza in tabel un administrator nou
+     * metoda care insereaza in tabel un administrator nou
      * @param admin
      * @return
      */

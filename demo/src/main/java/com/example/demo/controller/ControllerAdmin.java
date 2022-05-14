@@ -3,15 +3,17 @@ package com.example.demo.controller;
 import com.example.demo.logic.LogicAdmin;
 import com.example.demo.model.Administrator;
 
+import com.example.demo.model.Agent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
+ * clasa implementeaza controllerul pentru administrator
  * @Author Dud Larisa
  * @Since 25.03.2022
- * clasa implementeaza controllerul pentru administrator
+ *
  */
 @RestController
 @RequestMapping("/api")
@@ -22,7 +24,7 @@ public class ControllerAdmin{
     private LogicAdmin logicAdmin;
 
     /**
-     *metoda adaugare admin
+     * metoda adaugare admin
      * @param admin
      * @return returneaza un mesaj care indica daca a fost adaugat un nou admin
      */
@@ -52,6 +54,8 @@ public class ControllerAdmin{
         logicAdmin.deleteAdmin(idAdmin);
         return "An admin was deleted from db";
     }
+
+
 
 
 }

@@ -7,7 +7,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "agenti")
 
-public class Agent {
+public class Agent implements BasicUser{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -47,11 +47,11 @@ public class Agent {
 
     }
 
-    public int getIdAgent() {
+    public int getIdUser() {
         return idAgent;
     }
 
-    public void setIdAgent(int idAgent) {
+    public void setIdUser(int idAgent) {
         this.idAgent = idAgent;
     }
 

@@ -7,7 +7,7 @@ import javax.persistence.*;
 /**
  * clasa pentru obiectele din tabelul clienti
  */
-public class Client {
+public class Client implements BasicUser{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -23,6 +23,8 @@ public class Client {
     @Column(name = "telefon")
     private String telefon;
 
+    @Column(name = "email")
+    private String email;
 
     @Column(name = "username")
     private String username;
@@ -35,20 +37,21 @@ public class Client {
 
     }
 
-    public Client(String nume,String prenume, String telefon, String username, String password){
+    public Client(String nume,String prenume, String telefon, String email,  String username, String password){
         this.nume=nume;
         this.prenume=prenume;
         this.telefon=telefon;
+        this.email=email;
         this.username=username;
         this.password=password;
 
     }
 
-    public int getIdClient() {
+    public int getIdUser() {
         return idClient;
     }
 
-    public void setIdAgent(int idClient) {
+    public void setIdUser(int idClient) {
         this.idClient= idClient;
     }
 
@@ -76,6 +79,15 @@ public class Client {
         this.telefon = telefon;
     }
 
+    @Override
+    public String getEmail() {
+        return null;
+    }
+
+    @Override
+    public void setEmail(String email) {
+
+    }
 
 
     public String getUsername() {

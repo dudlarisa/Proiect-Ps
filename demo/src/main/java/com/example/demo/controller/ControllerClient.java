@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
+ * clasa implementeaza controllerul pentru client
  * @Author Dud Larisa
  * @Since 25.03.2022
- * clasa implementeaza controllerul pentru client
+ *
  */
 @RestController
 @RequestMapping("/api")

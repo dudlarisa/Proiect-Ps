@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+/**
+ *
+ */
 @Controller
 public class LogicAgent {
     private final AgentService agentService;
@@ -17,15 +20,28 @@ public class LogicAgent {
         this.agentService = agentService;
     }
 
+    /**
+     *
+     * @param agent
+     * @return
+     */
     public String addAgent(@RequestBody Agent agent){
         agentService.saveAgent(agent);
         return "New agent is added";
     }
 
+    /**
+     *
+     * @return
+     */
     public List<Agent> getAgenti(){
         return agentService.getAgenti();
     }
 
+    /**
+     *
+     * @param idAgent
+     */
     public void deleteAgent(int idAgent){
         agentService.deleteAgent(idAgent);
     }
