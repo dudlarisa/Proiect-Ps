@@ -35,3 +35,35 @@ Tabelul Anunturi e definist de atributele: id, id_agent (agentul care a publicat
 
 Coloana id_agent din tabelul anunturi este Foreign Key cu legatura catre coloana id din tabelul Agenti.
 
+
+## Tema3 si proiectul final
+
+Urmand tutorialele de Android Studio am reusit sa creez o interfata pentru aplicatie.
+Aplicatia realizata are 4 pagini intre care putem naviga si diverse operatii implementate .
+Proiectul final are 4 activitati, legate intre ele  astfel incat utilizatorul sa poata naviga.
+Navigarea intre activitati a fost realizata prin intermediul butoanelor si a mesajului Intent.
+Fisierele .xml pentru activitati contin toate elementele existente in UI carora li s au atribuit
+actiuni sau operatii in alte clase.
+
+Pagina principala contine doua ImageButton , unul de login si celalalt pentru vizualizarea anunturilor, si un Floating Button destinat trimiterii emailurilor. De asemenea pentru pentru o grafica mai interesanta am adaugat si un gif pe post de background.
+
+Pagina care va aparea cand apasam butonul cu casa, contine un buton pentru filtrarea anunturilor dupa un pret dat si un scrollView unde ni se vor afisa anunturile disponibile cand se va deschide fereastra.
+
+Pagina de login contine campurile destinate usernameului si parolei si 3 butoane, unul pentru autentificare, unul prentru register in cazul in care utilizatorul nu are cont si un buton de back care ne intoarce la pagina principala.
+
+Butonul de Register va deschide a 4 a pagina si anume pagina de register unde vom avea campuri pentru introducerea datelor necesare pentru crearea contului.
+
+In ceea ce priveste legatura dintre frontend si backend, am implementat doua operatii de get , una e implementata in spatele butonului cu casa din  interfata principala, si realizeaza extragerea din tabel a datelor despre toate anunturile, iar cealalta este declansata la apasarea butonului "Filtrare anunturi dupa pret" din interfata destinata anunturilor.
+
+Interfata principala
+![image](https://user-images.githubusercontent.com/72441193/171862529-fc2f20ae-c3dc-4572-adba-b2cb119c90b8.png)
+
+Interfata cu anunturile
+![image](https://user-images.githubusercontent.com/72441193/171862803-0f50e977-8eca-4752-ad8a-04eb2322e292.png)
+
+Interfata de login
+![image](https://user-images.githubusercontent.com/72441193/171862956-423d31ff-4d7f-4ea7-8304-db34d710ac48.png)
+
+Interfata de register
+![image](https://user-images.githubusercontent.com/72441193/171863040-9e6a10f8-a7c7-495d-9e8a-6e3aacaf2955.png)
+
