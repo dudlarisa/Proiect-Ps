@@ -18,6 +18,11 @@ In pachetul repository avem interfetele AnuntRepository, AgentRepository, AdminR
 
 In pachetul service , avem cate o interfata pentru fiecare tabel care contin metodele ce pot fi apelate asupra cestora si la randul lor , fiecare interfata are si o clasa in care se implementeaza logica din spatele metodelor folosinu-ne de obiecte de tipul interfetelor din repository.
 
+Clasele Admin , Client si Agent implementeaza interfata BasicUser.
+Clasa UserFactory se foloseste de clasele Client, Angajat si Admin, in aceasta fiind
+functia de creare a unui obiect in functie de tipul sau (tipurile de utilizator
+sunt definite in clasa de tip enum EnumUser).
+
 
 
 ## Diagrama bazei de date
