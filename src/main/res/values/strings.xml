@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" />
+    <string name="nestedScrollText">Hello! Bun venit la Vlad House Imobiliare.</string>
+    <string name="register">Register</string>
+    <string name="account">You don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="your_password">Your password</string>
+    <string name="your_username">Your username</string>
+    <string name="login2">LOGIN</string>
+    <string name="nume">Nume</string>
+    <string name="pren">prenume</string>
+    <string name="telefon">Telefon</string>
+    <string name="e_mail">E-mail</string>
+</resources>
